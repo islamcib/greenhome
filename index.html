@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зеленый Дом - Экологический помощник</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+  
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="glass">
+        <div class="logo">Зеленый Дом</div>
+        <nav>
+            <a data-modal="featuresModal">Возможности</a>
+            <a data-modal="botModal">Telegram-бот</a>
+            <a data-modal="gameModal">Игра</a>
+            <a data-modal="aboutModal">О нас</a>
+        </nav>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Ваш экологический помощник</h1>
+            <p>Сокращайте углеродный след, получайте персональные советы и следите за экологией вместе с нами</p>
+            <button class="cta-button" data-modal="botModal">Начать с ботом</button>
+        </div>
+        
+        <!-- Нижняя панель навигации -->
+        <div class="banner-nav glass">
+            <div class="nav-item" data-modal="tipsModal">
+                <div class="nav-icon">📚</div>
+                <span>Советы</span>
+            </div>
+           
+            <div class="nav-item" data-modal="gameModal">
+                <div class="nav-icon">🎮</div>
+                <span>Игра</span>
+            </div>
+            <div class="nav-item" data-modal="botModal">
+                <div class="nav-icon">🤖</div>
+                <span>Бот</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция преимуществ -->
+    <section class="benefits-section">
+        <div class="benefits-container">
+            <div class="benefit-card glass">
+                <div class="benefit-icon">🌍</div>
+                <h3>Экологичность</h3>
+                <p>Сокращайте углеродный след вместе с нами</p>
+            </div>
+            <div class="benefit-card glass">
+                <div class="benefit-icon">📱</div>
+                <h3>Удобство</h3>
+                <p>Весь функционал в вашем телефоне</p>
+            </div>
+            <div class="benefit-card glass">
+                <div class="benefit-icon">📊</div>
+                <h3>Статистика</h3>
+                <p>Отслеживайте свои достижения</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Секция советов -->
+    <section class="tips-section">
+        <div class="tips-container">
+            <div class="tip-card">
+                <div class="tip-icon">💡</div>
+                <h3>Экономия воды</h3>
+                <p>Закрывайте кран при чистке зубов - сэкономите до 6 литров воды в минуту</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">ledon</div>
+                <h3>Энергосбережение</h3>
+                <p>Используйте светодиодные лампы - они потребляют на 80% меньше энергии</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">♻️</div>
+                <h3>Переработка</h3>
+                <p>Разделяйте отходы: 1 тонна макулатуры спасает 17 деревьев</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальные окна -->
+    <div id="featuresModal" class="modal">
+        <div class="modal-content glass">
+            <span class="modal-close">&times;</span>
+            <h2>Наши возможности</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="feature-card">
+                            <div class="feature-icon">🌿</div>
+                            <h3>Экологические советы</h3>
+                            <p>Персональные рекомендации по снижению углеродного следа</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="feature-card">
+                            <div class="feature-icon">🗑️</div>
+                            <h3>Сортировка отходов</h3>
+                            <p>Инструкции по раздельному сбору мусора в вашем регионе</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="feature-card">
+                            <div class="feature-icon">💡</div>
+                            <h3>Энергосбережение</h3>
+                            <p>Советы по экономии электроэнергии и воды</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="botModal" class="modal">
+        <div class="modal-content glass">
+            <span class="modal-close">&times;</span>
+            <div class="bot-section">
+                <div class="bot-description">
+                    <h2>Telegram-бот @greennsu_bot</h2>
+                    <ul>
+                        <li>Расчет углеродного следа</li>
+                        <li>Напоминания о сортировке</li>
+                        <li>Экологические челленджи</li>
+                        <li>Персональные рекомендации</li>
+                    </ul>
+                    <a href="https://t.me/GreenHomeBot" target="_blank" class="cta-button">Перейти к боту</a>
+                </div>
+                <div class="bot-preview">
+                    <img src="tg-bot-screenshot.png" class="bot-screenshot" alt="Превью бота">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content glass" id="ecoGame">
+            <span class="modal-close">&times;</span>
+            <h2>Экологический квест</h2>
+            
+            <div class="game-container">
+                <img src="https://img.freepik.com/free-photo/view-3d-tree-with-abstract-leaves_23-2150800313.jpg?t=st=1741797460~exp=1741801060~hmac=dd94c3664446a752278854d622a836360ae9eb26aa96afae1d372848ca049d3b&w=1380" alt="Дерево" class="tree" id="gameTree">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressBar"></div>
+                </div>
+                <p>Нажимайте на листья, чтобы собрать энергию!</p>
+                <button class="game-button" id="startGame">Начать игру</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tipsModal" class="modal">
+        <div class="modal-content glass">
+            <span class="modal-close">&times;</span>
+            <h2>Экологические советы</h2>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <div class="tip-icon">🚲</div>
+                    <h3>Транспорт</h3>
+                    <p>Используйте велосипед или общественный транспорт для коротких поездок</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">Reusable</div>
+                    <h3>Повторное использование</h3>
+                    <p>Используйте многоразовые сумки вместо пластиковых пакетов</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🔋</div>
+                    <h3>Батарейки</h3>
+                    <p>Утилизируйте батарейки отдельно - они содержат токсичные вещества</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content glass">
+            <span class="modal-close">&times;</span>
+            <h2>О проекте</h2>
+            <p>Мы команда энтузиастов, стремящихся сделать экологию доступной для каждого. Наша миссия - помочь миллионам людей жить в гармонии с природой.</p>
+            <p>Присоединяйтесь к сообществу экосознательных людей!</p>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="glass">
+        <div class="footer-section">
+            <h3>Контакты</h3>
+            <p>Email: izikivi2006@gmail.com</p>
+            <p>Тел: +996554899880</p>
+        </div>
+        <div class="footer-section">
+            <h3>Соцсети</h3>
+            <div class="social-icons">
+                <a href="#" class="icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="icon telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </div>
+            
+        </div>
+      
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Модальные окна
+        document.querySelectorAll('[data-modal]').forEach(item => {
+            item.addEventListener('click', e => {
+                e.preventDefault();
+                const modal = document.getElementById(item.dataset.modal);
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        document.querySelectorAll('.modal-close, .modal').forEach(el => {
+            el.addEventListener('click', e => {
+                if (e.target === el || e.target.classList.contains('modal-close')) {
+                    document.querySelectorAll('.modal').forEach(modal => {
+                        modal.style.display = 'none';
+                    });
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Карусель
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
+        });
+
+     
+
+        // Игра
+        let gameStarted = false;
+        let score = 0;
+        const maxScore = 10;
+        const tree = document.getElementById('gameTree');
+        const progressBar = document.getElementById('progressBar');
+        const startButton = document.getElementById('startGame');
+
+        function createLeaf() {
+            const leaf = document.createElement('img');
+            leaf.src = 'https://img.freepik.com/free-photo/green-leaf-clay-craft-cute-nature-handmade-creative-art-graphic_53876-133036.jpg?t=st=1741798846~exp=1741802446~hmac=242f8156ee00c4d01adf90d0a46835d221380131affb2e2c44cad72fd010788c&w=1380';
+            leaf.className = 'leaf';
+            leaf.style.left = Math.random() * 80 + '%';
+            leaf.style.animationDuration = Math.random() * 3 + 2 + 's';
+            leaf.style.width = Math.random() * 30 + 20 + 'px';
+            document.querySelector('.game-container').appendChild(leaf);
+
+            leaf.addEventListener('click', () => {
+                if (gameStarted) {
+                    score++;
+                    updateProgress();
+                    leaf.remove();
+                    if (score >= maxScore) endGame();
+                }
+            });
+        }
+
+        function updateProgress() {
+            progressBar.style.width = (score / maxScore) * 100 + '%';
+        }
+
+        function startGame() {
+            gameStarted = true;
+            score = 0;
+            progressBar.style.width = '0%';
+            startButton.disabled = true;
+            tree.style.transform = 'translateX(-50%) scale(1)';
+            
+            const leafInterval = setInterval(createLeaf, 1500);
+            
+            setTimeout(() => {
+                clearInterval(leafInterval);
+                if (!gameStarted) return;
+                endGame();
+            }, 30000);
+        }
+
+        function endGame() {
+            gameStarted = false;
+            startButton.disabled = false;
+            alert(`Вы собрали ${score}/${maxScore} энергии!`);
+            tree.style.transform = 'translateX(-50%) scale(1.5)';
+            
+            if (confirm('Хотите продолжить в Telegram-боте?')) {
+                window.open('https://t.me/greennsu_bot', '_blank');
+            }
+        }
+
+        startButton.addEventListener('click', startGame);
+    </script>
+</body>
+</html>
